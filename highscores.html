@@ -3,21 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/highscores.css">
-    <title>High Scores - World War 2 Trivia</title>
+    <title>High Scores</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>High Scores</h1>
-        <nav>
-            <a href="index.html" class="btn">Home</a>
-            <a href="quiz.html" class="btn">Quiz</a>
-        </nav>
-    </header>
-    <div class="container">
-        <h2>Top High Scores</h2>
-        <ol id="highscores-list"></ol>
+    <div id="highscores-container">
+        <h2>High Scores</h2>
+        <ul id="highscores-list"></ul>
+        <a href="quiz.html" id="view-quiz-btn" class="btn">Back to Quiz</a>
     </div>
-    <script src="/assets/js/highscores.js"></script>
+    <script src="highscores.js"></script>
 </body>
 </html>

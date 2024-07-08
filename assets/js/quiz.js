@@ -116,6 +116,9 @@ const nextButton = document.getElementById('next-btn');
 const resultContainer = document.getElementById('result-container');
 const scoreElement = document.getElementById('score');
 const restartButton = document.getElementById('restart-btn');
+const submitScoreButton = document.getElementById('submit-score-btn');
+const usernameInput = document.getElementById('username');
+const viewHighscoresButton = document.getElementById('view-highscores-btn');
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -125,9 +128,9 @@ function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     showQuestion();
-    resultContainer.classList.add('hidden');
-    nextButton.classList.remove('hidden');
-    restartButton.classList.add('hidden');
+    resultContainer.classList.add();
+    nextButton.classList.remove();
+    restartButton.classList.add();
 }
 
 // Function to display a question and its answers
@@ -149,7 +152,7 @@ function showQuestion() {
 
 // Function to reset the state of the answer buttons
 function resetState() {
-    nextButton.classList.add('hidden');
+    nextButton.classList.add();
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
@@ -200,17 +203,10 @@ function showResults() {
     questionElement.innerText = 'Quiz Completed!';
     answerButtonsElement.innerHTML = '';
     scoreElement.innerText = `Your score: ${score} out of ${questions.length}`;
-    resultContainer.classList.remove('hidden');
-    nextButton.classList.add('hidden');
-    restartButton.classList.remove('hidden');
+    resultContainer.classList.remove();
+    nextButton.classList.add();
+    restartButton.classList.remove();
 }
-
-function saveHighScore(username, score) {
-    const highScores = getHighScores();
-    highScores.push({ name: username, score: score });
-    localStorage.setItem('highScores', JSON.stringify(highScores));
-}
-
 // Event listeners
 nextButton.addEventListener('click', goToNextQuestion);
 restartButton.addEventListener('click', startQuiz);
