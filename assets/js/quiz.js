@@ -117,9 +117,13 @@ const resultContainer = document.getElementById('result-container');
 const scoreElement = document.getElementById('score');
 const restartButton = document.getElementById('restart-btn');
 const usernameInput = document.getElementById('username');
+const timerElement = document.getElementById('timer');
 
 let currentQuestionIndex = 0;
 let score = 0;
+const timerDuration = 60;
+let timer;
+let timeLeft = timerDuration
 
 // Function to start the quiz and display the first question
 function startQuiz() {
@@ -129,6 +133,28 @@ function startQuiz() {
     resultContainer.classList.add('hidden');
     nextButton.classList.remove();
     restartButton.classList.add('hidden');
+    startTimer();
+}
+
+//Function to start timer
+function startTimer() {
+    timer = setInterval(() => {
+        timeLeft--;
+        updateTimerDisplay();
+
+        if (timeLeft === 0) {
+            clearInterval(timer);
+            showResults();
+        }
+    }, 1000); 
+}
+
+    //Function to update the timer display
+    function updateTimerDisplay() {
+    const timerElement = document.getElementById('timer');
+        const minutes = Math.floor(timeLeft / 60);
+        const seconds = timeLeft % 60;
+        timerElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 }
 
 // Function to display a question and its answers
@@ -198,6 +224,7 @@ function goToNextQuestion() {
 
 // Function to display quiz results
 function showResults() {
+    clearInterval(timer);
     questionElement.innerText = 'Quiz Completed!';
     answerButtonsElement.innerHTML = '';
     scoreElement.innerText = `Your score: ${score} out of ${questions.length}`;
