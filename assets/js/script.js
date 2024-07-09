@@ -14,12 +14,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     }
-
-    const highscoresButton = document.getElementById('highscores');
-    if (highscoresButton) {
-        highscoresButton.addEventListener('click', function() {
-            // Redirect to the high scores page
-            window.location.href = 'highscores.html';
-        });
-    }
 });

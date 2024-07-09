@@ -109,7 +109,7 @@ const questions = [
     }
 ];
 
-// Elements from HTML (assuming they are defined in your HTML)
+// Elements from HTML
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const nextButton = document.getElementById('next-btn');
