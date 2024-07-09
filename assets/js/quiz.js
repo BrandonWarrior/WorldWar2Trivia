@@ -116,9 +116,7 @@ const nextButton = document.getElementById('next-btn');
 const resultContainer = document.getElementById('result-container');
 const scoreElement = document.getElementById('score');
 const restartButton = document.getElementById('restart-btn');
-const submitScoreButton = document.getElementById('submit-score-btn');
 const usernameInput = document.getElementById('username');
-const viewHighscoresButton = document.getElementById('view-highscores-btn');
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -128,9 +126,9 @@ function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
     showQuestion();
-    resultContainer.classList.add();
+    resultContainer.classList.add('hidden');
     nextButton.classList.remove();
-    restartButton.classList.add();
+    restartButton.classList.add('hidden');
 }
 
 // Function to display a question and its answers
@@ -203,9 +201,9 @@ function showResults() {
     questionElement.innerText = 'Quiz Completed!';
     answerButtonsElement.innerHTML = '';
     scoreElement.innerText = `Your score: ${score} out of ${questions.length}`;
-    resultContainer.classList.remove();
-    nextButton.classList.add();
-    restartButton.classList.remove();
+    resultContainer.classList.remove('hidden');
+    nextButton.classList.add('hidden');
+    restartButton.classList.remove('hidden');
 }
 // Event listeners
 nextButton.addEventListener('click', goToNextQuestion);
