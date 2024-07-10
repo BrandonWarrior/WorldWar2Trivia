@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-image: url('assets/images/ww2aibackground.webp');
+    background-image: url('../images/ww2aibackground.webp');
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
