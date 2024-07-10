@@ -133,11 +133,14 @@ function startQuiz() {
     resultContainer.classList.add('hidden');
     nextButton.classList.remove();
     restartButton.classList.add('hidden');
-    startTimer();
+    resetAndStartTimer();
 }
 
-//Function to start timer
-function startTimer() {
+//Function to reset and start timer
+function resetAndStartTimer() {
+    clearInterval(timer); // Clear any existing timer
+    timeLeft = timerDuration; // Reset time to 1 minute 
+    updateTimerDisplay(); // Update the display immediately
     timer = setInterval(() => {
         timeLeft--;
         updateTimerDisplay();
@@ -147,6 +150,13 @@ function startTimer() {
             showResults();
         }
     }, 1000); 
+}
+
+//Function to reset timer
+function resetTimer() {
+    clearInterval(timer);
+    timeLeft = timerDuration;
+    updateTimerDisplay();
 }
 
     //Function to update the timer display
@@ -234,7 +244,7 @@ function showResults() {
 }
 // Event listeners
 nextButton.addEventListener('click', goToNextQuestion);
-restartButton.addEventListener('click', startQuiz);
+restartButton.addEventListener('click', startQuiz); 
 
 // Start the quiz when the page loads
 document.addEventListener('DOMContentLoaded', startQuiz);
