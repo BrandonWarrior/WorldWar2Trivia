@@ -118,6 +118,7 @@ const scoreElement = document.getElementById('score');
 const restartButton = document.getElementById('restart-btn');
 const usernameInput = document.getElementById('username');
 const timerElement = document.getElementById('timer');
+const alertBox = document.getElementById('alert-box');
 
 let currentQuestionIndex = 0;
 let score = 0;
@@ -133,6 +134,7 @@ function startQuiz() {
     resultContainer.classList.add('hidden');
     nextButton.classList.remove();
     restartButton.classList.add('hidden');
+    alertBox.classList.add('hidden');
     resetAndStartTimer();
 }
 
@@ -145,8 +147,9 @@ function resetAndStartTimer() {
         timeLeft--;
         updateTimerDisplay();
 
-        if (timeLeft === 0) {
+        if (timeLeft <= 0) {
             clearInterval(timer);
+            alertBox.classList.remove('hidden');
             showResults();
         }
     }, 1000); 

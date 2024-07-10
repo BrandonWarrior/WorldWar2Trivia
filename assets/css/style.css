@@ -57,3 +57,16 @@ button {
 button:hover {
     background-color: #0056b3;
 }
+
+.alert{
+    background-color: red;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.hidden{
+    display: none;
+}
