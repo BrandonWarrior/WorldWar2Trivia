@@ -1,3 +1,4 @@
+
 body {
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
@@ -61,15 +62,15 @@ button:hover {
     background-color: #0056b3;
 }
 
-#alert-box {
+.hidden {
+    display: none;
+}
+
+#alert-box, .alert {
     background-color: red;
     color: #ffffff;
     padding: 20px;
     text-align: center;
     margin-top: 20px;
     border-radius: 5px;
-}
-
-.hidden {
-    display: none;
 }

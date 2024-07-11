@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/global.css">
     <link rel="stylesheet" href="assets/css/quiz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
     <title>Quiz - World War 2 Trivia</title>
 </head>
 <body>
@@ -18,19 +22,16 @@
         <div id="question-container">
             <div id="question"></div>
             <div id="answer-buttons" class="btn-container"></div>
-            <button id="next-btn" class="hidden"> Next</button>
+            <button id="next-btn" class="hidden">Next</button>
         </div>
-        <section id="result-container">
+        <section id="result-container" class="hidden">
             <h2>Your Score</h2>
             <p id="score"></p>
             <button id="restart-btn" class="btn">Restart Quiz</button>
         </section>
-
-        <button id="restart-btn" class="btn hidden">Restart</button>
     </div>
     <div id="alert-box" class="alert hidden">
-             Out of Time!
-    </div>
+        Out of Time!
     </div>
     <script src="assets/js/quiz.js"></script>
 </body>
