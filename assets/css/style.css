@@ -1,5 +1,8 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold 700;
+    font-style: normal;
     background-image: url('../images/ww2aibackground.webp');
     background-repeat: no-repeat;
     background-position: center center;
@@ -58,7 +61,7 @@ button:hover {
     background-color: #0056b3;
 }
 
-.alert{
+#alert-box {
     background-color: red;
     color: #ffffff;
     padding: 20px;
@@ -67,6 +70,6 @@ button:hover {
     border-radius: 5px;
 }
 
-.hidden{
+.hidden {
     display: none;
 }

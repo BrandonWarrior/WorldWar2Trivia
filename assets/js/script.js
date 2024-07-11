@@ -1,16 +1,19 @@
 document.addEventListener('DOMContentLoaded', function() {
     const startQuizButton = document.getElementById('start-quiz');
+    const usernameInput = document.getElementById('username');
+    const alertBox = document.getElementById('alert-box');
+
     if (startQuizButton) {
         startQuizButton.addEventListener('click', function() {
-            const username = document.getElementById('username').value;
-            if (username) {
-                // Save the username to local storage
-                localStorage.setItem('username', username);
-                alert(`Welcome, ${username}! Starting the quiz...`);
+            const username = usernameInput.value.trim();
+
+            if (username === '') {
+                alertBox.classList.remove('hidden'); // Show alert message
+            } else {
+                alertBox.classList.add('hidden'); // Hide alert message
+                localStorage.setItem('username', username); // Save username to localStorage
                 // Redirect to the quiz page
                 window.location.href = 'quiz.html';
-            } else {
-                alert('Please enter a username.');
             }
         });
     }

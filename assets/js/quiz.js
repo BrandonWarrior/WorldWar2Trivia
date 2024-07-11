@@ -141,9 +141,9 @@ function startQuiz() {
 
 // Function to reset and start timer
 function resetAndStartTimer() {
-    clearInterval(timer); // Clear any existing timer
-    timeLeft = timerDuration; // Reset time to 1 minute 
-    updateTimerDisplay(); // Update the display immediately
+    clearInterval(timer); 
+    timeLeft = timerDuration; 
+    updateTimerDisplay(); 
     timer = setInterval(() => {
         timeLeft--;
         updateTimerDisplay();
@@ -197,9 +197,9 @@ function selectAnswer(button, isCorrect) {
     setStatusClass(button, isCorrect);
     Array.from(answerButtonsElement.children).forEach(btn => {
         if (btn !== button && btn.dataset.correct === 'true') {
-            btn.disabled = true; // Disable correct answer buttons
+            btn.disabled = true; 
         }
-        btn.disabled = true; // Disable all answer buttons after selection
+        btn.disabled = true; 
     });
     if (isCorrect) {
         score++;
