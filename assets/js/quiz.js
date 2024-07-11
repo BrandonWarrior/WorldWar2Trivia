@@ -123,7 +123,7 @@ const alertBox = document.getElementById('alert-box');
 // Variables
 let currentQuestionIndex = 0;
 let score = 0;
-const timerDuration = 60;
+const timerDuration = 120;
 let timer;
 let timeLeft = timerDuration;
 
