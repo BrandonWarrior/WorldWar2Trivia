@@ -107,6 +107,7 @@ const questions = [
             { text: 'Joseph Stalin', correct: false }
         ]
     }
+    // Add more questions here as needed
 ];
 
 // Elements from HTML
@@ -116,15 +117,15 @@ const nextButton = document.getElementById('next-btn');
 const resultContainer = document.getElementById('result-container');
 const scoreElement = document.getElementById('score');
 const restartButton = document.getElementById('restart-btn');
-const usernameInput = document.getElementById('username');
 const timerElement = document.getElementById('timer');
 const alertBox = document.getElementById('alert-box');
 
+// Variables
 let currentQuestionIndex = 0;
 let score = 0;
 const timerDuration = 60;
 let timer;
-let timeLeft = timerDuration
+let timeLeft = timerDuration;
 
 // Function to start the quiz and display the first question
 function startQuiz() {
@@ -132,13 +133,13 @@ function startQuiz() {
     score = 0;
     showQuestion();
     resultContainer.classList.add('hidden');
-    nextButton.classList.remove();
+    nextButton.classList.add('hidden');
     restartButton.classList.add('hidden');
     alertBox.classList.add('hidden');
     resetAndStartTimer();
 }
 
-//Function to reset and start timer
+// Function to reset and start timer
 function resetAndStartTimer() {
     clearInterval(timer); // Clear any existing timer
     timeLeft = timerDuration; // Reset time to 1 minute 
@@ -155,19 +156,11 @@ function resetAndStartTimer() {
     }, 1000); 
 }
 
-//Function to reset timer
-function resetTimer() {
-    clearInterval(timer);
-    timeLeft = timerDuration;
-    updateTimerDisplay();
-}
-
-    //Function to update the timer display
-    function updateTimerDisplay() {
-    const timerElement = document.getElementById('timer');
-        const minutes = Math.floor(timeLeft / 60);
-        const seconds = timeLeft % 60;
-        timerElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+// Function to update the timer display
+function updateTimerDisplay() {
+    const minutes = Math.floor(timeLeft / 60);
+    const seconds = timeLeft % 60;
+    timerElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 }
 
 // Function to display a question and its answers
@@ -182,30 +175,35 @@ function showQuestion() {
         if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
-        button.addEventListener('click', selectAnswer);
+        button.addEventListener('click', () => {
+            if (!button.classList.contains('correct')) {
+                selectAnswer(button, answer.correct);
+            }
+        });
         answerButtonsElement.appendChild(button);
     });
 }
 
 // Function to reset the state of the answer buttons
 function resetState() {
-    nextButton.classList.add();
+    nextButton.classList.add('hidden');
     while (answerButtonsElement.firstChild) {
         answerButtonsElement.removeChild(answerButtonsElement.firstChild);
     }
 }
 
 // Function to handle when an answer is selected
-function selectAnswer(e) {
-    const selectedButton = e.target;
-    const correct = selectedButton.dataset.correct === 'true';
-    setStatusClass(selectedButton, correct);
-    if (correct) {
+function selectAnswer(button, isCorrect) {
+    setStatusClass(button, isCorrect);
+    Array.from(answerButtonsElement.children).forEach(btn => {
+        if (btn !== button && btn.dataset.correct === 'true') {
+            btn.disabled = true; // Disable correct answer buttons
+        }
+        btn.disabled = true; // Disable all answer buttons after selection
+    });
+    if (isCorrect) {
         score++;
     }
-    Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct === 'true');
-    });
     nextButton.classList.remove('hidden');
 }
 
@@ -245,9 +243,10 @@ function showResults() {
     nextButton.classList.add('hidden');
     restartButton.classList.remove('hidden');
 }
+
 // Event listeners
 nextButton.addEventListener('click', goToNextQuestion);
-restartButton.addEventListener('click', startQuiz); 
+restartButton.addEventListener('click', startQuiz);
 
 // Start the quiz when the page loads
 document.addEventListener('DOMContentLoaded', startQuiz);
