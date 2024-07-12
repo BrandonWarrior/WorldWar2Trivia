@@ -49,6 +49,9 @@ input[type="text"] {
 }
 
 button {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold 700;
     padding: 10px 20px;
     margin: 5px;
     border: none;
@@ -63,6 +66,9 @@ button {
 }
 
 #alert-box, .alert {
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold 700;
     background-color: red;
     color: #ffffff;
     padding: 20px;
