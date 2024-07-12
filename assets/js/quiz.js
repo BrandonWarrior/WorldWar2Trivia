@@ -132,13 +132,13 @@ let userAnswers = []; // Store user answers for detailed feedback
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
-    userAnswers = []; // Reset user answers
+    userAnswers = []; 
     showQuestion();
     resultContainer.classList.add('hidden');
     nextButton.classList.add('hidden');
     restartButton.classList.add('hidden');
     alertBox.classList.add('hidden');
-    detailedFeedbackElement.innerHTML = ''; // Clear previous feedback
+    detailedFeedbackElement.innerHTML = ''; 
     resetAndStartTimer();
 }
 
