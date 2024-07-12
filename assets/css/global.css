@@ -17,6 +17,7 @@ body {
 }
 
 header {
+    margin-top: 50px;
     color: white;
     width: 100%;
     padding: 10px 0;
@@ -29,7 +30,7 @@ header {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 h1 {
@@ -75,4 +76,118 @@ button {
     text-align: center;
     margin-top: 20px;
     border-radius: 5px;
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        padding: 6px 12px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+    }
+
+    #timer {
+        font-size: 1em;
+    }
+
+    #question {
+        font-size: 1em;
+    }
+
+    #result-container {
+        padding: 8px;
+    }
+
+    #score {
+        font-size: 1.2em;
+    }
+
+    #next-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    #alert-box {
+        padding: 10px;
+    }
+
+    #detailed-feedback p {
+        font-size: 0.8em;
+    }
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+
+    input[type="text"] {
+        width: 100%;
+    }
+
+    button {
+        padding: 8px 16px;
+    }
+
+    .btn-container {
+        flex-direction: column;
+    }
+
+    #timer {
+        font-size: 1.2em;
+    }
+
+    #question {
+        font-size: 1.2em;
+    }
+
+    #result-container {
+        padding: 10px;
+    }
+
+    #score {
+        font-size: 1.5em;
+    }
+
+    #next-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    #alert-box {
+        padding: 15px;
+    }
+
+    #detailed-feedback p {
+        font-size: 0.9em;
+    }
 }
