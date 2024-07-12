@@ -107,7 +107,6 @@ const questions = [
             { text: 'Joseph Stalin', correct: false }
         ]
     }
-    // Add more questions here as needed
 ];
 
 // Elements from HTML
@@ -119,23 +118,27 @@ const scoreElement = document.getElementById('score');
 const restartButton = document.getElementById('restart-btn');
 const timerElement = document.getElementById('timer');
 const alertBox = document.getElementById('alert-box');
+const detailedFeedbackElement = document.getElementById('detailed-feedback'); // New element
 
 // Variables
 let currentQuestionIndex = 0;
 let score = 0;
-const timerDuration = 120;
+const timerDuration = 120; // 2 minutes
 let timer;
 let timeLeft = timerDuration;
+let userAnswers = []; // Store user answers for detailed feedback
 
 // Function to start the quiz and display the first question
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
+    userAnswers = []; // Reset user answers
     showQuestion();
     resultContainer.classList.add('hidden');
     nextButton.classList.add('hidden');
     restartButton.classList.add('hidden');
     alertBox.classList.add('hidden');
+    detailedFeedbackElement.innerHTML = ''; // Clear previous feedback
     resetAndStartTimer();
 }
 
@@ -204,6 +207,12 @@ function selectAnswer(button, isCorrect) {
     if (isCorrect) {
         score++;
     }
+    userAnswers.push({
+        question: questions[currentQuestionIndex].question,
+        selected: button.innerText,
+        correct: questions[currentQuestionIndex].answers.find(ans => ans.correct).text,
+        isCorrect: isCorrect // Track if the answer was correct
+    });
     nextButton.classList.remove('hidden');
 }
 
@@ -242,6 +251,17 @@ function showResults() {
     resultContainer.classList.remove('hidden');
     nextButton.classList.add('hidden');
     restartButton.classList.remove('hidden');
+
+    // Display detailed feedback
+    detailedFeedbackElement.innerHTML = userAnswers.map(answer => `
+        <p>
+            <strong>Question:</strong> ${answer.question} <br>
+            <strong>Your Answer:</strong> 
+            <span class="${answer.isCorrect ? 'correct-answer' : 'wrong-answer'}">${answer.selected}</span> <br>
+            <strong>Correct Answer:</strong> 
+            <span class="correct-answer">${answer.correct}</span>
+        </p>
+    `).join('');
 }
 
 // Event listeners

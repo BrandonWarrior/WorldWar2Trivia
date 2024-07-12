@@ -52,10 +52,6 @@ header nav .btn:hover {
     cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #0056b3;
-}
-
 .correct {
     background-color: #28a745;
 }
@@ -96,4 +92,18 @@ header nav .btn:hover {
     text-align: center;
     margin-top: 20px;
     border-radius: 5px;
+}
+
+#detailed-feedback p {
+    font-size: 1em;
+    text-align: left;
+    margin: 10px 0;
+}
+
+.correct-answer {
+    color: #28a745;
+}
+
+.wrong-answer {
+    color: #dc3545;
 }
