@@ -12,11 +12,14 @@
 </head>
 <body>
     <header>
-        <h1>World War II Trivia Quiz</h1>
+        <h1>World War II Trivia</h1>
         <nav class="home-btn">
             <a href="index.html" class="btn">Home</a>
         </nav>
     </header>
+    <div id="alert-box" class="alert hidden">
+        Out of Time!
+    </div>
     <div class="container">
         <div id="timer">2:00</div> 
         <div id="question-container">
@@ -28,11 +31,9 @@
             <h2>Your Score</h2>
             <p id="score"></p>
             <div id="detailed-feedback"></div> 
+            <p id="rating-message" class="rating-message"></p> 
             <button id="restart-btn" class="btn">Restart Quiz</button>
         </section>
-    </div>
-    <div id="alert-box" class="alert hidden">
-        Out of Time!
     </div>
     <script src="assets/js/quiz.js"></script>
 </body>

@@ -16,7 +16,18 @@ Welcome to the World War 2 Trivia Quiz project! This interactive quiz applicatio
 
 - Responsive Design: Ensures the quiz adapts well to various screen sizes, from desktops, tablets and mobile phones.
 
-##
+## Deployment
+I deployed the page to GitHub Pages using the following steps:
+
+- Navigate to the project's repository and click on the Settings tab.
+
+- Select the Pages option from the menu on the left.
+
+- In the Source section, choose the Main branch from the drop-down menu and click Save.
+
+- A confirmation message will appear, indicating a successful deployment to GitHub Pages and providing the live URL.
+
+- You can find the live site via the following URL: 
 
 ## 
 
