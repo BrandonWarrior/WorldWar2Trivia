@@ -92,6 +92,13 @@ header nav .btn {
     margin: 10px 0;
 }
 
+#rating-message {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 20px;
+}
+
 .correct-answer {
     color: #28a745;
 }

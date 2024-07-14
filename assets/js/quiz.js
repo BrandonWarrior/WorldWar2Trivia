@@ -118,15 +118,16 @@ const scoreElement = document.getElementById('score');
 const restartButton = document.getElementById('restart-btn');
 const timerElement = document.getElementById('timer');
 const alertBox = document.getElementById('alert-box');
-const detailedFeedbackElement = document.getElementById('detailed-feedback'); // New element
+const detailedFeedbackElement = document.getElementById('detailed-feedback');
+const ratingMessageElement = document.getElementById('rating-message'); 
 
 // Variables
 let currentQuestionIndex = 0;
 let score = 0;
-const timerDuration = 120; // 2 minutes
+const timerDuration = 120;
 let timer;
 let timeLeft = timerDuration;
-let userAnswers = []; // Store user answers for detailed feedback
+let userAnswers = []; 
 
 // Function to start the quiz and display the first question
 function startQuiz() {
@@ -211,7 +212,7 @@ function selectAnswer(button, isCorrect) {
         question: questions[currentQuestionIndex].question,
         selected: button.innerText,
         correct: questions[currentQuestionIndex].answers.find(ans => ans.correct).text,
-        isCorrect: isCorrect // Track if the answer was correct
+        isCorrect: isCorrect
     });
     nextButton.classList.remove('hidden');
 }
@@ -262,6 +263,18 @@ function showResults() {
             <span class="correct-answer">${answer.correct}</span>
         </p>
     `).join('');
+
+        // Calculate rating based on the score
+        let rating;
+        if (score <= 7) {
+            rating = "Private";
+        } else if (score <= 11) {
+            rating = "Commander";
+        } else {
+            rating = "Veteran";
+        }
+    // Update rating message element
+    ratingMessageElement.textContent = `Rating: ${rating}`;
 }
 
 // Event listeners
