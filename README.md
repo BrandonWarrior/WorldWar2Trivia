@@ -2,7 +2,7 @@
 
 Welcome to the World War 2 Trivia Quiz project! This interactive quiz application is designed to test your knowledge about various aspects of World War 2 history. From key events and battles to influential figures and significant dates, challenge yourself with a series of questions and see how well you know this pivotal period in global history.
 
-[]()
+[Am I responsive](docs/images/am-i-responsive.png)
 
 ## Features:
 - Multiple Choice Questions: Answer a variety of questions related to World War 2.
@@ -33,15 +33,38 @@ I deployed the page to GitHub Pages using the following steps:
 
 ## Index page
 []()
+[]()
 ## Quiz
+
+[]()
+[]()
 
 ## Results
 
+[]()
+[]()
+[]()
+
 ## Color Scheme
+
+[]()
 
 ## Validation
 
+[]()
+[]()
+[]()
+[]()
+
 ## Lighthouse
+
+- Mobile 
+[]()
+[]()
+
+- Desktop
+[]()
+[]()
 
 ## Bugs
 
