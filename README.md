@@ -29,6 +29,18 @@ I deployed the page to GitHub Pages using the following steps:
 
 - You can find the live site via the following URL: 
 
+## Index page
+
+## Quiz
+
+## Results
+
+## Color Scheme
+
+## Validation
+
+## Lighthouse
+
 ## Bugs
 
 ### Bug 1 
