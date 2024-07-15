@@ -17,11 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
             const username = usernameInput.value.trim();
 
             if (username === '') {
-                alertBox.classList.remove('hidden'); // Show alert message
+                alertBox.classList.remove('hidden');
             } else {
-                alertBox.classList.add('hidden'); // Hide alert message
-                localStorage.setItem('username', username); // Save username to localStorage
-                window.location.href = 'quiz.html'; // Redirect to the quiz page
+                alertBox.classList.add('hidden'); 
+                localStorage.setItem('username', username); 
+                window.location.href = 'quiz.html'; 
             }
         });
     }
