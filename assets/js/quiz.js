@@ -1,3 +1,7 @@
+/**
+ * This script handles the functionality of the quiz page.
+ * It includes quiz questions, answer validation, timing, and result calculation.
+ */
 const questions = [
     {
         question: 'What year did World War 2 start?',
@@ -128,8 +132,12 @@ const timerDuration = 120;
 let timer;
 let timeLeft = timerDuration;
 let userAnswers = []; 
+let rating;
 
-// Function to start the quiz and display the first question
+/**
+ * Starts the quiz and displays the first question.
+ * Resets quiz variables and timer.
+ */
 function startQuiz() {
     currentQuestionIndex = 0;
     score = 0;
@@ -143,7 +151,9 @@ function startQuiz() {
     resetAndStartTimer();
 }
 
-// Function to reset and start timer
+/**
+ * Resets and starts the quiz timer.
+ */
 function resetAndStartTimer() {
     clearInterval(timer); 
     timeLeft = timerDuration; 
@@ -160,14 +170,18 @@ function resetAndStartTimer() {
     }, 1000); 
 }
 
-// Function to update the timer display
+/**
+ * Updates the timer display.
+ */
 function updateTimerDisplay() {
     const minutes = Math.floor(timeLeft / 60);
     const seconds = timeLeft % 60;
     timerElement.textContent = `${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
 }
 
-// Function to display a question and its answers
+/**
+ * Displays a question and its answers.
+ */
 function showQuestion() {
     resetState();
     const currentQuestion = questions[currentQuestionIndex];
@@ -188,7 +202,10 @@ function showQuestion() {
     });
 }
 
-// Function to reset the state of the answer buttons
+/**
+ * Resets the state of the answer buttons.
+ */
+
 function resetState() {
     nextButton.classList.add('hidden');
     while (answerButtonsElement.firstChild) {
@@ -196,7 +213,9 @@ function resetState() {
     }
 }
 
-// Function to handle when an answer is selected
+/**
+* Function to handle when an answer is selected
+*/
 function selectAnswer(button, isCorrect) {
     setStatusClass(button, isCorrect);
     Array.from(answerButtonsElement.children).forEach(btn => {
@@ -217,7 +236,9 @@ function selectAnswer(button, isCorrect) {
     nextButton.classList.remove('hidden');
 }
 
-// Function to update button styling based on correctness
+/**
+ * Updates button styling based on correctness.
+*/
 function setStatusClass(element, correct) {
     clearStatusClass(element);
     if (correct) {
@@ -227,13 +248,17 @@ function setStatusClass(element, correct) {
     }
 }
 
-// Function to clear previous button styling
+/** 
+ *  Function to clear previous button styling
+ */
 function clearStatusClass(element) {
     element.classList.remove('correct');
     element.classList.remove('wrong');
 }
 
-// Function to move to the next question or show results
+/**
+ * Function to move to the next question or show results
+ */
 function goToNextQuestion() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
@@ -243,7 +268,9 @@ function goToNextQuestion() {
     }
 }
 
-// Function to display quiz results
+/**
+ * Function to display quiz results
+ */
 function showResults() {
     clearInterval(timer);
     questionElement.innerText = 'Quiz Completed!';
@@ -253,7 +280,9 @@ function showResults() {
     nextButton.classList.add('hidden');
     restartButton.classList.remove('hidden');
 
-    // Display detailed feedback
+    /**
+     * Display detailed feedback
+     */
     detailedFeedbackElement.innerHTML = userAnswers.map(answer => `
         <p>
             <strong>Question:</strong> ${answer.question} <br>
@@ -264,7 +293,9 @@ function showResults() {
         </p>
     `).join('');
 
-        // Calculate rating based on the score
+        /**
+         * Calculate rating based on the score
+         */
         let rating;
         if (score <= 7) {
             rating = "Private";
