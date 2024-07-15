@@ -113,7 +113,9 @@ const questions = [
     }
 ];
 
-// Elements from HTML
+/** 
+ * Elements from HTML
+ */
 const questionElement = document.getElementById('question');
 const answerButtonsElement = document.getElementById('answer-buttons');
 const nextButton = document.getElementById('next-btn');
@@ -304,13 +306,19 @@ function showResults() {
         } else {
             rating = "Veteran";
         }
-    // Update rating message element
+    /**
+     * Update rating message element
+     */
     ratingMessageElement.textContent = `Rating: ${rating}`;
 }
 
-// Event listeners
+/**
+ * Event listeners
+ */
 nextButton.addEventListener('click', goToNextQuestion);
 restartButton.addEventListener('click', startQuiz);
 
-// Start the quiz when the page loads
+/**
+ * Start the quiz when the page loads
+ */
 document.addEventListener('DOMContentLoaded', startQuiz);
