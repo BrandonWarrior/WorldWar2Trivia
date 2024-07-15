@@ -12,11 +12,13 @@ header nav .btn {
     color: #000000;
     text-decoration: none;
     cursor: pointer;
+    justify-content: center;
 }
 
 .container {
     width: 80%;
     max-width: 600px;
+    justify-content: center;
 }
 
 #timer {
@@ -46,6 +48,10 @@ header nav .btn {
     background-color: #7FFF00;
     color: #000000;
     cursor: pointer;
+}
+
+#return-home-btn{
+
 }
 
 .correct {
