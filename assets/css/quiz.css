@@ -8,7 +8,7 @@ header nav .btn {
     margin: 5px;
     border: none;
     border-radius: 5px;
-    background-color: #7FFF00;
+    background-color: #FFD700;
     color: #000000;
     text-decoration: none;
     cursor: pointer;
@@ -52,26 +52,12 @@ main {
     flex-direction: column;
 }
 
-.btn {
-    padding: 10px;
-    margin: 5px 0;
-    border: none;
-    border-radius: 5px;
-    background-color: #7FFF00;
-    color: #000000;
-    cursor: pointer;
-}
-
-#return-home-btn{
-
-}
-
-.correct {
-    background-color: #28a745;
+.correct { 
+    background-color: #00FF00;
 }
 
 .wrong {
-    background-color: #dc3545;
+    background-color: #FF0000;
 }
 
 #result-container {
@@ -84,11 +70,14 @@ main {
 }
 
 #next-btn {
+    font-family: "Oswald", sans-serif;
+    font-weight: 700;
+    font-style: normal;
     padding: 10px 20px;
     margin-top: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #7FFF00;
+    background-color: #FFD700;
     color: #000000;
     cursor: pointer;
     font-size: 16px;
@@ -96,7 +85,7 @@ main {
 }
 
 #alert-box {
-    background-color: red;
+    background-color: #FF0000;
     color: #ffffff;
     padding: 20px;
     text-align: center;
@@ -113,14 +102,14 @@ main {
 #rating-message {
     font-size: 1.2em;
     font-weight: bold;
-    color: #28a745;
+    color: #00FF00;
     margin-top: 20px;
 }
 
 .correct-answer {
-    color: #28a745;
+    color: #00FF00;
 }
 
 .wrong-answer {
-    color: #dc3545;
+    color: #FF0000;
 }
