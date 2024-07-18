@@ -22,15 +22,21 @@ main {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
+    margin-top: 50px;
 }
 
 .container {
-    width: 80%;
-    max-width: 600px;
-    min-height: 100%;
-    justify-content: center;
-    flex-direction: column;
-    flex: 1;
+    color: #FFD700;
+    text-align: center;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+    width: 60%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 #timer {
