@@ -39,7 +39,7 @@ header h1 {
 
 main {
     flex: 1;
-    padding-bottom: 300px;
+    padding-bottom:780px;
 }
 
 .container {
@@ -71,6 +71,7 @@ input[type="text"] {
     margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    text-align: center;
 }
 
 .btn {
@@ -221,15 +222,12 @@ footer {
 }
 /* Media query for tablets */
 @media (max-width: 768px) {
+
     body {
         font-size: 14px;
         background: url('../images/ww2aibackground.webp') no-repeat center center fixed;
         background-size: cover;
     }
-
-main {
-    padding-bottom: 400px;
-}
 
     .container {
         width: 90%;
@@ -280,16 +278,4 @@ main {
     #detailed-feedback p {
         font-size: 0.9em;
     }
-}
-
-footer {
-    padding: 20px;
-    text-align: center;
-    position: absolute;
-    bottom: 0;
-    flex: 1;
-    margin: 0 auto;
-    width: 100%;
-    height: 60px;
-}
 }
