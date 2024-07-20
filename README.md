@@ -2,7 +2,7 @@
 
 Welcome to the World War 2 Trivia Quiz project! This interactive quiz application is designed to test your knowledge about various aspects of World War 2 history. From key events and battles to influential figures and significant dates, challenge yourself with a series of questions and see how well you know this pivotal period in global history.
 
-[Am I responsive](docs/images/am-i-responsive.png)
+![Am I responsive](docs/images/amiresponsive.png)
 
 ## Features:
 - Multiple Choice Questions: Answer a variety of questions related to World War 2.
@@ -10,6 +10,8 @@ Welcome to the World War 2 Trivia Quiz project! This interactive quiz applicatio
 - Timer: Each question is timed to add an element of challenge.
 
 - Detailed Feedback: After completing the quiz, receive detailed feedback on your answers.
+
+- How to Play Page: Provides instructions on how to navigate and play the quiz, ensuring users understand the game mechanics.
 
 ## Technologies used:
 - HTML, CSS: For structuring and styling the quiz interface.
@@ -29,7 +31,27 @@ I deployed the page to GitHub Pages using the following steps:
 
 - A confirmation message will appear, indicating a successful deployment to GitHub Pages and providing the live URL.
 
-- You can find the live site via the following URL: 
+- You can find the live site via the following URL: https://brandonwarrior.github.io/WorldWar2Trivia/index.html
+
+## Color Scheme
+
+### Primary Colors
+- Gold (#FFD700): This color is used for text and buttons, providing a sharp contrast against darker backgrounds. It symbolizes value and significance, drawing attention to key elements and interactive features.
+
+- Black (#000000): The black background for the header text and other elements symbolizes the somber and serious tone of the subject matter, providing a strong foundation for the visual hierarchy.
+
+### Secondary Colors 
+- Dark Gray (#333333): Used as the background for containers and footers, this color provides a neutral but sophisticated backdrop that ensures content readability while maintaining the overall aesthetic.
+
+- Red (#FF0000): Employed for alert messages and feedback, red commands attention and signals importance or urgency, making it perfect for providing immediate feedback to users.
+
+- Green (#00FF00): This bright green color is used for correct answers and rating, symbolizing success and positive feedback. It provides a clear visual cue that the user has selected the right answer or achieved a good rating.
+
+## Background 
+- Background Image: The background image, a custom-created piece reflecting World War II themes, serves as a powerful visual anchor. It is set to cover the entire screen and maintain a consistent appearance across different devices and screen sizes, enhancing the immersive experience.
+
+## Font
+- The font family used is "Oswald," a sans-serif typeface that is both modern and legible, adding to the overall clarity and usability of the quiz interface.
 
 ## Index page
 []()
@@ -45,10 +67,6 @@ I deployed the page to GitHub Pages using the following steps:
 []()
 []()
 
-## Color Scheme
-
-[]()
-
 ## Validation
 
 []()
@@ -58,11 +76,11 @@ I deployed the page to GitHub Pages using the following steps:
 
 ## Lighthouse
 
-- Mobile 
+### Mobile 
 []()
 []()
 
-- Desktop
+### Desktop
 []()
 []()
 
@@ -90,6 +108,8 @@ I deployed the page to GitHub Pages using the following steps:
 ## Credits:
 - background image - I created the background image using a AI image generator https://www.canva.com/design/DAGKxMr4i6w/K6HHEQgduea1uBTfz6EkOQ/edit?ui=eyJFIjp7IkE_IjoiViIsIkIiOiJCIn0sIkciOnsiQiI6dHJ1ZX19
 
-- Fonts - Google Fonts 
+- The code used for the background image shorthand was taken from the Love Running project.
 
-- To generate the questions i was going to use i used ChatGPT https://openai.com/chatgpt/
+- Font - Google Fonts 
+
+- To generate the questions I was going to use I used ChatGPT https://openai.com/chatgpt/

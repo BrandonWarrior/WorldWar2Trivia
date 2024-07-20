@@ -134,7 +134,6 @@ const timerDuration = 120;
 let timer;
 let timeLeft = timerDuration;
 let userAnswers = []; 
-let rating;
 
 /**
  * Starts the quiz and displays the first question.
