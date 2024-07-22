@@ -1,6 +1,6 @@
 # Welcome to: World War II Trivia 
 
-Welcome to the World War 2 Trivia Quiz project! This interactive quiz application is designed to test your knowledge about various aspects of World War 2 history. From key events and battles to influential figures and significant dates, challenge yourself with a series of questions and see how well you know this pivotal period in global history. My fascination with World War 2 has inspired me to create this quiz, as I find the complexities and stories of this era both compelling and crucial for understanding our past. Dive in and test your knowledge of a time that shaped the modern world.
+Welcome to the World War 2 Trivia Quiz project! This interactive quiz is designed to test your knowledge about various aspects of World War 2 history. From key events and battles to influential figures and significant dates, challenge yourself with a series of questions and see how well you know this pivotal period in global history. My fascination with World War 2 has inspired me to create this quiz, as I find the complexities and stories of this era both compelling and crucial for understanding our past. Dive in and test your knowledge of a time that shaped the modern world.
 
 ![Am I responsive](docs/images/amiresponsive.png)
 
