@@ -43,7 +43,7 @@ I deployed the page to GitHub Pages using the following steps:
 ### Secondary Colors 
 - Dark Gray (#333333): Used as the background for containers and footers, this color provides a neutral but sophisticated backdrop that ensures content readability while maintaining the overall aesthetic.
 
-- Red (#FF0000): Employed for alert messages and feedback, red commands attention and signals importance or urgency, making it perfect for providing immediate feedback to users.
+- Red (#FF0000): Employed for alert messages and feedback, red commands attention and signals importance or urgency, making it perfect for providing immediate feedback to users. Also to avoid any contrast erros I made any font that was red bold. 
 
 - Green (#00FF00): This bright green color is used for correct answers and rating, symbolizing success and positive feedback. It provides a clear visual cue that the user has selected the right answer or achieved a good rating.
 
