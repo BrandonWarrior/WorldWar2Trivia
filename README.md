@@ -49,9 +49,6 @@ I deployed the page to GitHub Pages using the following steps:
 
 ![Contrast Grid](docs/images/contrast.png)
 
-## Background 
-- Background Image: The background image, a custom-created piece reflecting World War II themes, serves as a powerful visual anchor. It is set to cover the entire screen and maintain a consistent appearance across different devices and screen sizes, enhancing the immersive experience.
-
 ## Font
 - The font family used is "Oswald," a sans-serif typeface that is both modern and legible, adding to the overall clarity and usability of the quiz interface.
 
