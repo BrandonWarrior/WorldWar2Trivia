@@ -46,7 +46,7 @@ main {
 .container {
     color: #FFD700;
     text-align: center;
-    background-color: #333;
+    background-color: #000000;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -116,7 +116,7 @@ ul li {
     }
 
 footer {
-    background-color: #333;
+    background-color: #000000;
     color: #FFD700;
     padding: 20px;
     text-align: center;

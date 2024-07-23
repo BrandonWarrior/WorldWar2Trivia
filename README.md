@@ -4,7 +4,7 @@ Welcome to the World War 2 Trivia Quiz project! This interactive quiz is designe
 
 ![Am I responsive](docs/images/amiresponsive.png)
 
-## Features:
+## Planned Features:
 - Multiple Choice Questions: Answer a variety of questions related to World War 2.
 
 - Timer: Each question is timed to add an element of challenge.
@@ -20,30 +20,16 @@ Welcome to the World War 2 Trivia Quiz project! This interactive quiz is designe
 
 - Responsive Design: Ensures the quiz adapts well to various screen sizes, from desktops, tablets and mobile phones.
 
-## Deployment
-I deployed the page to GitHub Pages using the following steps:
-
-- Navigate to the project's repository and click on the Settings tab.
-
-- Select the Pages option from the menu on the left.
-
-- In the Source section, choose the Main branch from the drop-down menu and click Save.
-
-- A confirmation message will appear, indicating a successful deployment to GitHub Pages and providing the live URL.
-
-- You can find the live site via the following URL: https://brandonwarrior.github.io/WorldWar2Trivia/index.html
-
 ## Color Scheme
 
 ### Primary Colors
 - Gold (#FFD700): This color is used for text and buttons, providing a sharp contrast against darker backgrounds. It symbolizes value and significance, drawing attention to key elements and interactive features.
 
-- Black (#000000): The black background for the header text and other elements symbolizes the somber and serious tone of the subject matter, providing a strong foundation for the visual hierarchy.
+- Black (#000000): The black background for the header text and other elements provides a strong foundation for the visual hierarchy. Additionally, the container and footer are also black to ensure there is no difficulty with contrast and readability, maintaining a cohesive and visually clear design throughout the application. This consistent use of black enhances the overall user experience by offering a stark and effective contrast to other colors used in the project.
 
 ### Secondary Colors 
-- Dark Gray (#333333): Used as the background for containers and footers, this color provides a neutral but sophisticated backdrop that ensures content readability while maintaining the overall aesthetic.
 
-- Red (#FF0000): Employed for alert messages and feedback, red commands attention and signals importance or urgency, making it perfect for providing immediate feedback to users. Also to avoid any contrast erros I made any font that was red bold. 
+- Red (#FF0000): Employed for alert messages and feedback, red commands attention and signals importance or urgency, making it perfect for providing immediate feedback to users. Also to avoid any contrast erros I made any font that was red bold to avoid readbility issues.
 
 - Green (#00FF00): This bright green color is used for correct answers and rating, symbolizing success and positive feedback. It provides a clear visual cue that the user has selected the right answer or achieved a good rating.
 
@@ -81,7 +67,8 @@ I deployed the page to GitHub Pages using the following steps:
 
 - Immediate feedback is provided for each answer. Correct answers are highlighted in green (#00FF00), and incorrect answers are highlighted in red (#FF0000). This immediate feedback helps users learn and understand the correct information.
 
-![Wrong Answer](docs/images/wrong-answer.png) ![Correct Answer](docs/images/correct-answer.png)
+![Wrong Answer](docs/images/wrong-answer.png) 
+![Correct Answer](docs/images/correct-answer.png)
 
 ## Timer 
 - Users have a total of 2 minutes to answer all 12 questions. The timer is clearly visible and counts down, encouraging users to think quickly. If usersdo not complete the quiz within the 2-minute time limit an Out of Time Alert will inform them that they are out of time. The quiz will then show the results based on the questions answered up to that point.
@@ -99,7 +86,11 @@ I deployed the page to GitHub Pages using the following steps:
 
 ![Code Structure](docs/images/code-structure.png)
 
-## Validation
+## Testing and Validation
+
+### Wave Extention
+-  used the WAVE (Web Accessibility Evaluation Tool) extension to test my World War 2 Trivia Quiz project to ensure it meets accessibility standards and provides a better user experience for all users, including those with disabilities. WAVE helped identify and fix structural and semantic issues in the HTML, improve color contrast for readability, and ensure proper navigation. By using WAVE iteratively throughout the development process, I was able to address accessibility issues and enhance the overall inclusivity and usability of the website.
+
 
 ### HTML Validation
 - HTML files were validated using the W3C Markup Validation Service. This tool checked for syntax errors and ensured that the HTML markup adhered to current web standards.
@@ -122,7 +113,7 @@ I deployed the page to GitHub Pages using the following steps:
 ![Mobile Scores](docs/images/mobile-lighthouse.png)
 ![Desktop Scores](docs/images/desktop-lighthouse.png)
 
-## Bugs
+## Bugs and Fixes
 
 ### Bug 1 
 - Porblem with the timer not resetting when the 'Restart Quiz' Button was clicked.  
@@ -142,6 +133,26 @@ I deployed the page to GitHub Pages using the following steps:
 ### Fix
 - applied the font stlying to buttons in css showed the font on my buttons throughout the quiz. 
 
+## Unfixed bugs
+- There are currently no unfixed bugs in this project. 
+
+## Deployment
+I deployed the page to GitHub Pages using the following steps:
+
+- Navigate to the project's repository and click on the Settings tab.
+
+- Select the Pages option from the menu on the left.
+
+- In the Source section, choose the Main branch from the drop-down menu and click Save.
+
+- A confirmation message will appear, indicating a successful deployment to GitHub Pages and providing the live URL.
+
+- You can find the live site via the following URL: https://brandonwarrior.github.io/WorldWar2Trivia/index.html
+
+## Future Developments 
+- 
+- 
+- 
 
 ## Credits:
 - background image - I created the background image using a AI image generator https://www.canva.com/design/DAGKxMr4i6w/K6HHEQgduea1uBTfz6EkOQ/edit?ui=eyJFIjp7IkE_IjoiViIsIkIiOiJCIn0sIkciOnsiQiI6dHJ1ZX19
