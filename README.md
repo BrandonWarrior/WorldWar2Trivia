@@ -87,6 +87,14 @@ Welcome to the World War 2 Trivia Quiz project! This interactive quiz is designe
 
 ![Results](docs/images/results.png)
 
+## Favicon
+- For the World War II Trivia Quiz project, I chose a time bomb emoji as the favicon. This choice is symbolic and fitting, as it visually represents the timed nature of the quiz, adding a sense of urgency and excitement. The favicon is integrated into the project using various sizes to ensure it displays correctly across different devices and platforms. The favicon files include:
+- apple-touch-icon (180x180)
+- favicon-32x32 (32x32)
+- favicon-16x16 (16x16)
+- site.webmanifest
+
+![Favicon](docs/images/favicon.png)
 
 ## Code Structure
 - The World War 2 Trivia Quiz project is organized into three HTML pages (index.html, quiz.html, and how-to-play.html) to manage the home page, quiz interface, and how to play. It employs two CSS files (styles.css for overall styling and quiz.css for quiz-specific styles) and two JavaScript files (script.js for home page interactions and quiz.js for quiz logic). The docs/images folder stores documentation images, while the assets folder contains subfolders for images, CSS, and JavaScript files, ensuring the project's structure is clean and maintainable.
