@@ -130,7 +130,7 @@ Welcome to the World War 2 Trivia Quiz project! This interactive quiz is designe
 ![Desktop Scores](docs/images/desktop-lighthouse.png)
 
 ## Other Methods of Testing
-- In addition to automated testing tools, I conducted manual testing on various devices and browsers to ensure responsiveness and functionality. I also asked friends to test the app, providing valuable feedback on user experience and identifying any issues. Their perspectives helped refine the quiz interface and ensure a smooth, engaging experience for all users. This combination of automated and real-world testing was crucial in delivering a reliable application.
+- In addition to automated testing tools, I conducted manual testing on various devices and browsers to ensure responsiveness and functionality. I also checked the browser console for errors to identify and resolve any issues that might not be immediately visible. Furthermore, I asked friends to test the app, providing valuable feedback on user experience and identifying any issues. Their perspectives helped refine the quiz interface and ensure a smooth, engaging experience for all users. This combination of automated and real-world testing was crucial in delivering a reliable application.
 
 ## Bugs and Fixes
 
