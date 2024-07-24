@@ -35,6 +35,8 @@ Welcome to the World War 2 Trivia Quiz project! This interactive quiz is designe
 
 ![Contrast Grid](docs/images/contrast.png)
 
+## Features and Pages 
+
 ## Font
 - The font family used is "Oswald," a sans-serif typeface that is both modern and legible, adding to the overall clarity and usability of the quiz interface.
 
@@ -93,17 +95,17 @@ Welcome to the World War 2 Trivia Quiz project! This interactive quiz is designe
 
 
 ### HTML Validation
-- HTML files were validated using the W3C Markup Validation Service. This tool checked for syntax errors and ensured that the HTML markup adhered to current web standards.
+- All 3 HTML files were validated using the W3C Markup Validation Service. This tool checked for syntax errors and ensured that the HTML markup adhered to current web standards.
 
 ![Html Validation](docs/images/htmlvalidator.png)
 
 ### CSS Validation
-- The CSS code was validated using the W3C CSS Validator. This process confirmed that all CSS stylesheets are free of errors and follow standard CSS practices.
+- Both of my CSS files was validated using the W3C CSS Validator. This process confirmed that all CSS stylesheets are free of errors and follow standard CSS practices.
 
 ![CSS Validator](docs/images/global.png)
 
 ### JavaScript Validation
-- JavaScript code was validated using JSHint. This tool reviewed the JavaScript files for potential errors and adherence to best practices, ensuring that the quiz logic runs smoothly and efficiently without any bugs.
+- Both JavaScript files was validated using JSHint. This tool reviewed the JavaScript files for potential errors and adherence to best practices, ensuring that the quiz logic runs smoothly and efficiently without any bugs.
 
 ![JS Hint](docs/images/quizjshint.png)
 
@@ -112,6 +114,9 @@ Welcome to the World War 2 Trivia Quiz project! This interactive quiz is designe
 
 ![Mobile Scores](docs/images/mobile-lighthouse.png)
 ![Desktop Scores](docs/images/desktop-lighthouse.png)
+
+## Other Methods of Testing
+- In addition to automated testing tools, I conducted manual testing on various devices and browsers to ensure responsiveness and functionality. I also asked friends to test the app, providing valuable feedback on user experience and identifying any issues. Their perspectives helped refine the quiz interface and ensure a smooth, engaging experience for all users. This combination of automated and real-world testing was crucial in delivering a reliable application.
 
 ## Bugs and Fixes
 
@@ -150,9 +155,7 @@ I deployed the page to GitHub Pages using the following steps:
 - You can find the live site via the following URL: https://brandonwarrior.github.io/WorldWar2Trivia/index.html
 
 ## Future Developments 
-- 
-- 
-- 
+- In future updates to the World War 2 Trivia Quiz project, I plan to add several new features. One major improvement will be using local storage to save user scores, so players can keep track of their progress over time. I also aim to connect the app to a database, which will let me store and retrieve scores and user information for a more personalized experience and competitive leaderboards. Other ideas include adding more questions to make the quiz longer, incorporating multimedia elements to make the quiz more engaging, and providing extra historical details to help users learn more about World War 2.
 
 ## Credits:
 - background image - I created the background image using a AI image generator https://www.canva.com/design/DAGKxMr4i6w/K6HHEQgduea1uBTfz6EkOQ/edit?ui=eyJFIjp7IkE_IjoiViIsIkIiOiJCIn0sIkciOnsiQiI6dHJ1ZX19
