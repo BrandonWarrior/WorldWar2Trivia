@@ -7,7 +7,7 @@ Welcome to the World War 2 Trivia Quiz project! This interactive quiz is designe
 ## Planned Features:
 - Multiple Choice Questions: Answer a variety of questions related to World War 2.
 
-- Timer: Each question is timed to add an element of challenge.
+- Timer: Create a timer that ends the quiz if users do not complete the quiz in the allocated time.
 
 - Detailed Feedback: After completing the quiz, receive detailed feedback on your answers.
 
@@ -71,7 +71,7 @@ Welcome to the World War 2 Trivia Quiz project! This interactive quiz is designe
 ## Quiz
 - The quiz page is the core component of the World War 2 Trivia Quiz application, where users actively participate by answering questions. The page is designed to be interactive and user-friendly, providing an engaging experience while testing users' knowledge of World War 2 history.
 
-- Immediate feedback is provided for each answer. Correct answers are highlighted in green (#00FF00), and incorrect answers are highlighted in red (#FF0000). This immediate feedback helps users learn and understand the correct information.
+- Immediate feedback is provided for each answer. Correct answers are highlighted in green (#00FF00), and incorrect answers are highlighted in red (#FF0000). This immediate feedback helps users learn and understand the correct information. Additionally, the "Next" button only appears once an answer is clicked, preventing users from skipping questions and ensuring they engage with each question before moving forward.
 
 ![Quiz Structure](docs/images/quiz.png)
 ![Wrong Answer](docs/images/wrong-answer.png) 
@@ -83,12 +83,12 @@ Welcome to the World War 2 Trivia Quiz project! This interactive quiz is designe
 ![Out of Time Alert](docs/images/out-of-time.png)
 
 ## Results
-- At the end of the quiz, users are presented with their final score. The results page provides detailed feedback on each question, showing which answers were correct and which were incorrect. This comprehensive feedback helps users understand their strengths and areas for improvement. Additionally, users receive a rating based on their performance, which categorizes their knowledge level, adding an extra layer of motivation and engagement.
+- At the end of the quiz, users are presented with their final score. The results page provides detailed feedback on each question, showing which answers were correct and which were incorrect. This feedback helps users understand their strengths and areas for improvement. Additionally, users receive a rating based on their performance, which categorizes their knowledge level, adding an extra layer of motivation and engagement.
 
 ![Results](docs/images/results.png)
 
 ## Favicon
-- For the World War II Trivia Quiz project, I chose a time bomb emoji as the favicon. This choice is symbolic and fitting, as it visually represents the timed nature of the quiz, adding a sense of urgency and excitement. The favicon is integrated into the project using various sizes to ensure it displays correctly across different devices and platforms. The favicon files include:
+- For the World War II Trivia Quiz project, I chose a time bomb emoji as the favicon. This choice is fitting, as it visually represents the timed nature of the quiz, adding a sense of urgency and excitement. The favicon is integrated into the project using various sizes to ensure it displays correctly across different devices and platforms. The favicon files include:
 - apple-touch-icon (180x180)
 - favicon-32x32 (32x32)
 - favicon-16x16 (16x16)
@@ -97,7 +97,11 @@ Welcome to the World War 2 Trivia Quiz project! This interactive quiz is designe
 ![Favicon](docs/images/favicon.png)
 
 ## Code Structure
-- The World War 2 Trivia Quiz project is organized into three HTML pages (index.html, quiz.html, and how-to-play.html) to manage the home page, quiz interface, and how to play. It employs two CSS files (styles.css for overall styling and quiz.css for quiz-specific styles) and two JavaScript files (script.js for home page interactions and quiz.js for quiz logic). The docs/images folder stores documentation images, while the assets folder contains subfolders for images, CSS, and JavaScript files, ensuring the project's structure is clean and maintainable.
+- HTML: The World War 2 Trivia Quiz project is organized into 3 HTML pages (index.html, quiz.html, and how-to-play.html) to manage the home page, quiz interface, and how to play instructions.
+
+- CSS: It employs 2 CSS files (styles.css for overall styling and quiz.css for quiz-specific styles) to ensure consistent design and layout across different parts of the application and to make it easier to keep track of.
+
+- JavaScript: The project uses 2 JavaScript files (script.js for home page interactions and quiz.js for quiz logic) to handle the behavior and functionality of the quiz.
 
 ![Code Structure](docs/images/code-structure.png)
 
@@ -130,7 +134,11 @@ Welcome to the World War 2 Trivia Quiz project! This interactive quiz is designe
 ![Desktop Scores](docs/images/desktop-lighthouse.png)
 
 ## Other Methods of Testing
-- In addition to automated testing tools, I conducted manual testing on various devices and browsers to ensure responsiveness and functionality. I also checked the browser console for errors to identify and resolve any issues that might not be immediately visible. Furthermore, I asked friends to test the app, providing valuable feedback on user experience and identifying any issues. Their perspectives helped refine the quiz interface and ensure a smooth, engaging experience for all users. This combination of automated and real-world testing was crucial in delivering a reliable application.
+- Automated Testing: Utilized automated testing tools to assess various aspects of the application's performance and functionality.
+
+- Manual Testing: Conducted manual testing across different devices and browsers to ensure responsiveness and functionality. Checked the browser console for errors to identify and fix any hidden issues.
+
+- User Feedback: Requested friends to test the app, gathering valuable feedback on user experience and identifying potential issues. Their insights were instrumental in refining the quiz interface and enhancing the overall user experience.
 
 ## Bugs and Fixes
 
@@ -184,4 +192,6 @@ I deployed the page to GitHub Pages using the following steps:
 
 - To generate the questions I was going to use I used ChatGPT https://openai.com/chatgpt/
 
-- To generate the favicon i used https://favicon.io/
+- To generate the favicon I used https://favicon.io/
+
+- I used https://www.w3schools.com/js/#gsc.tab=0 to help me learn how to implement a timer.  
